@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#con-row-1 {
+  margin-top: 36px;
+}
+.con-col-container {
+  display: flex;
+  margin: 0px 20px 0px 20px;
+}
+.con-icon {
+  font-size: 30px;
+  color: #6de6d0;
+  align-self: center;
+  margin-left: 30px;
+}
+.con-details {
+  margin-left: 26px;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.con-details h5 {
+  font-size: 19px;
+}
+
+.con-details a {
+  color: rgb(14, 36, 231);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+  .con-icon {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .con-details {
+    margin-left: 15px;
+  }
+  #con-row-1 {
+    margin: 44px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .con-icon {
+    margin-left: 40px;
+  }
+  .con-details {
+    margin-left: 30px;
+  }
+}
+
+.con-second-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+#con-header {
+  margin-bottom: 30px;
+}
+/* input field  */
+.con-input {
+  border: 1px solid rgb(222, 214, 214);
+  padding: 10px;
+  flex-grow: 1;
+  margin: 0px;
+}
+
+/* media query for .con-input  */
+@media screen and (max-width: 991px) {
+  .con-input {
+    margin-bottom: 20px;
+  }
+}
+
+input[placeholder] {
+  font-size: 17px;
+}
+
+button {
+  background-color: #0a58ca;
+  padding: 10px;
+  width: 141px;
+  font-weight: 700;
+  color: white;
+  margin-top: 24px;
+}
+
+#message {
+  width: 100%;
+  height: 95px;
+  margin-top: 20px;
+  font-size: 17px;
+  padding: 14px;
+  color: gray;
+}
+
+@media screen and (max-width: 767px) {
+  .con-second-container {
+    width: 93%;
+  }
+}

@@ -1,0 +1,13 @@
+.navbar-hover-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff006e;
+  transition: width 0.3s;
+}
+
+.navbar-hover-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}

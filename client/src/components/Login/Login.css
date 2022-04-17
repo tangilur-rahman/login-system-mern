@@ -1,0 +1,76 @@
+#log-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 90px;
+}
+
+/* first-Column */
+
+#log-first-column {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* second-column */
+#log-header {
+	margin-bottom: 40px;
+}
+
+.log-input {
+	border: 0px;
+	margin-left: 17px;
+	width: 90%;
+}
+
+.log-input:focus {
+	outline: none;
+}
+#log-button {
+	background-color: #0a58ca;
+	padding: 10px;
+	width: 141px;
+	font-weight: 700;
+	color: white;
+	margin-top: 24px;
+}
+.log-link-container {
+	font-weight: 600;
+	margin-top: 30px;
+}
+#log-link-container {
+	align-self: center;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.log-img {
+	width: 600px;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	#log-container {
+		margin-top: 70px;
+	}
+	#log-row {
+		width: 100%;
+		margin: 0 50px 0 50px;
+		padding: 25px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#log-row{
+		margin: 0 5px 0 5px;
+	}
+	.log-input {
+		width: 83%;
+	}
+	#log-container {
+		margin-top: 40px;
+	}
+}

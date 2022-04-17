@@ -1,0 +1,56 @@
+#error-row-container {
+	background-image: url("./../images/errorPic.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 91vh;
+}
+#error-col-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 24px;
+}
+
+#error-link {
+	width: 208px;
+	height: 61px;
+	padding: 16px;
+	margin: 13px 103px 0px 0px;
+	border-radius: 30px;
+	margin-left: 100px;
+	background-color: #ff0054;
+}
+#error-link:hover {
+	opacity: 0.9;
+}
+
+#error-navlink {
+	font-size: 22px;
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	margin-left: 36px;
+}
+
+/* for hover link  */
+.hover-link::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width 0.3s;
+}
+
+.hover-link:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
+
+@media screen and (max-width: 450px) {
+	#error-header {
+		font-size: 22px;
+	}
+}

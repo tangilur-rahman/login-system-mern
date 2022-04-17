@@ -1,0 +1,92 @@
+#home-row-container {
+	width: 100%;
+	height: 100%;
+}
+#home-first-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 151px;
+}
+#welcome {
+	font-size: 5rem;
+}
+
+#userName {
+	margin: -12px 44px 22px 0px;
+	color: #ff0a54;
+	font-weight: bolder;
+	font-size: 3rem;
+}
+
+#home-message {
+	color: gray;
+}
+
+#home-link {
+	width: 208px;
+	height: 61px;
+	padding: 16px;
+	margin: 38px 103px 0px 0px;
+	border-radius: 30px;
+
+	background-color: #ff0054;
+}
+#home-link:hover {
+	opacity: 0.9;
+}
+
+#home-navlink {
+	font-size: 22px;
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	margin-left: 53px;
+}
+
+/* for hover link  */
+.hover-link::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width 0.3s;
+}
+
+.hover-link:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
+
+/* second section  */
+
+#home-second-container {
+	height: 70vh;
+	align-self: center;
+
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+	#home-first-container {
+		margin-top: 70px;
+	}
+	#home-message {
+		margin-right: 10px;
+	}
+	#welcome {
+		font-size: 3rem;
+		margin-right: 70px;
+	}
+	#userName {
+		font-size: 2rem;
+		margin: 0px 30px 22px 0px;
+	}
+
+	#home-link {
+		margin: 38px 70px 0px 0px;
+	}
+}
