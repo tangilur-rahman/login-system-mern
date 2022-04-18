@@ -1,24 +1,24 @@
 //  fontawesome-icon
 import { faAt, faKey } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // react library
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-
 // react-router-dom
 import { NavLink, useNavigate } from "react-router-dom";
-
 // react-toastify
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { logInActionCreator } from "./../../service/Action/Action";
-
 // import login image
 import loginPic from "./../images/login.jpg";
-
 //import css
 import "./Login.css";
+
+
+
+
+
 
 const Login = () => {
 	// For Redirect "/home"
@@ -98,7 +98,7 @@ const Login = () => {
 					<img src={loginPic} alt="login" className="img-fluid log-img" />
 
 					<div className="log-link-container" id="log-link-container">
-						<NavLink to="../register" className="link">
+						<NavLink to="../signup" className="link">
 							Create An Account
 						</NavLink>
 					</div>
@@ -141,7 +141,7 @@ const Login = () => {
 						</button>{" "}
 						<br />
 						<div className="log-link-container">
-							<NavLink to="../register" className="d-lg-none link">
+							<NavLink to="../signup" className="d-lg-none link">
 								Create An Account
 							</NavLink>
 						</div>
