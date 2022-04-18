@@ -45,7 +45,7 @@ const signup = async (req, res) => {
 
 						// save that document into mongoDB
 						await document.save();
-						res.status(200).json({ message: "Account Created Successfully" });
+						res.status(200).json({ message: "Account Register Successfully ❤️" });
 					}
 				} else {
 					res.status(401).json({ error: "Password Didn't Match 😣" });

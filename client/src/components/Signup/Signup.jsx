@@ -77,7 +77,7 @@ const Signup = () => {
 					theme: "colored"
 				});
 			} else {
-				toast.success("Login Successfully", {
+				toast.success(result.message, {
 					position: "top-center",
 					theme: "colored",
 					autoClose: 3000
