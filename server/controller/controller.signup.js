@@ -28,7 +28,7 @@ const signup = async (req, res) => {
 				// check password match or not
 				if (password === cpassword) {
 					if (password.length < 8) {
-						throw Error("Password must be minimum 8 ");
+						res.status(406).json({ error: "Password must be minimum 8 " });
 					} else {
 						const hashPassword = await bcrypt.hash(password, 10);
 						const cHashPassword = await bcrypt.hash(cpassword, 10);
